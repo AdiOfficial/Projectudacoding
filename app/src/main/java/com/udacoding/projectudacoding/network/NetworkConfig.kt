@@ -23,7 +23,7 @@ object NetworkConfig {
 
     fun getRetrofit():Retrofit{
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("http://growbackind.com/mapi/index.php/Api/")
             .client(getInterceptor())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create()).build()
